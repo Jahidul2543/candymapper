@@ -22,7 +22,6 @@
        <!-- <class name="test.page.objects.UgingGoogleSheetLoginPageTest"/>-->
     </classes>
 
-    <!--Hello-->
 </test>
 
 </suite>
