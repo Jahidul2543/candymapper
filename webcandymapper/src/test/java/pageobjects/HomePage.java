@@ -19,14 +19,14 @@ public class HomePage {
     @FindBy(xpath = "//div[@data-aid='CONTACT_EMAIL_ERR_REND']")
     private WebElement errorTest;
 
-    public void dropUsALine(){
+    public void dropUsALine(String name, String message){
         TestLogger.log("Send key to Name Box");
 
         // nameBox.sendKeys("Paul");
         //messageBox.sendKeys("Hi Hello!!!");
         //submitButton.click();
-        ApplicationPageBase.sendKeys(nameBox, "NameBox", "Paul");
-        ApplicationPageBase.sendKeys(messageBox, "messageBox", "Hello Hi!!");
+        ApplicationPageBase.sendKeys(nameBox, "NameBox", name);
+        ApplicationPageBase.sendKeys(messageBox, "messageBox", message);
         ApplicationPageBase.click(submitButton, "submitButton");
 
     }
